@@ -1,0 +1,21 @@
+# Powershell plugin installation
+
+$PSVersionTable.PSVersion
+
+Get-Module -Name AzureRM -ListAvailable
+
+Get-ExecutionPolicy -List
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+Install-Module -Name Az -Repository PSGallery -Force
+
+Update-Module -Name Az -Force
+
+Connect-AzAccount
+
+# Az command line installation on Windows with powershell
+
+winget search Microsoft.PowerShell
+
+winget install --id Microsoft.Powershell --source winget
