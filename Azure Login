@@ -1,0 +1,4 @@
+# Login to Azure portal via Powershell
+
+Add-AzAccount
+
